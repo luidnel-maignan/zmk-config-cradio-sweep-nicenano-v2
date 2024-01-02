@@ -57,7 +57,7 @@
 
         SP {
             bindings = <&kp SPACE>;
-            key-positions = <11 12>;
+            key-positions = <12 13>;
         };
     };
 
