@@ -30,12 +30,12 @@
     combos {
         compatible = "zmk,combos";
 
-        L1R {
-            bindings = <&kp RIGHT_GUI>;
+        ALTGR {
+            bindings = <&kp RIGHT_ALT>;
             key-positions = <25 26>;
         };
 
-        L1L {
+        META {
             bindings = <&kp LEFT_GUI>;
             key-positions = <23 24>;
         };
@@ -50,12 +50,12 @@
             key-positions = <13 14>;
         };
 
-        SPR {
-            bindings = <&kp SPACE>;
+        EN {
+            bindings = <&kp ENTER>;
             key-positions = <16 17>;
         };
 
-        SPL {
+        SP {
             bindings = <&kp SPACE>;
             key-positions = <11 12>;
         };
