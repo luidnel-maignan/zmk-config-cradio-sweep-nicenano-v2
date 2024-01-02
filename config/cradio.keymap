@@ -55,7 +55,7 @@
             key-positions = <26 27 28>;
         };
 
-        SPR {
+        SPL {
             bindings = <&kp SPACE>;
             key-positions = <21 22 23>;
         };
