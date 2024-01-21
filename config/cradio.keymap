@@ -44,8 +44,8 @@
         layer_two {
             bindings = <
 &kp F1         &kp F2    &kp F3    &kp F4     &kp F5        &kp F6         &kp F7     &kp F8      &kp F9           &kp F10
-&kp PAGE_UP    &kp LEFT  &kp UP    &kp RIGHT  &kp TAB       &sk BACKSPACE  &sk LCMD   &sk K_MENU  &kp PRINTSCREEN  &kp F11
-&kp PAGE_DOWN  &kp HOME  &kp DOWN  &kp END    &kp ESCAPE    &kp DELETE     &kp LCTRL  &kp LALT    &kp INS          &kp F12
+&kp PAGE_UP    &kp LEFT  &kp UP    &kp RIGHT  &kp TAB       &kp BACKSPACE  &sk LCMD   &kp K_MENU  &kp PRINTSCREEN  &kp F11
+&kp PAGE_DOWN  &kp HOME  &kp DOWN  &kp END    &kp ESCAPE    &kp DELETE     &sk LCTRL  &sk LALT    &kp INS          &kp F12
                                    &trans     &mo 2         &trans         &kp ENTER
             >;
         };
