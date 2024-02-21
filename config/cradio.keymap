@@ -16,6 +16,12 @@
             require-prior-idle-ms = <250>;
             bindings = <&kp>, <&kp>;
         };
+        td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp RALT>, <&kp RS(RALT)>;
+        };
     };
 
     combos { compatible = "zmk,combos"; };
@@ -25,10 +31,10 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp W       &kp E       &kp R        &kp T       &kp Y      &kp U        &kp I       &kp O       &kp P
-&kp A  &ht LCMD S  &ht LALT D  &ht LCTRL F  &kp G       &kp H      &ht LCTRL J  &ht LALT K  &ht LCMD L  &kp SEMI
-&kp Z  &kp X       &kp C       &kp V        &kp B       &kp N      &kp M        &kp COMMA   &kp DOT     &kp FSLH
-                               &mo 1        &kp RALT    &kp RSHFT  &kp SPACE
+&kp Q  &kp W       &kp E       &kp R        &kp T    &kp Y      &kp U        &kp I       &kp O       &kp P
+&kp A  &ht LCMD S  &ht LALT D  &ht LCTRL F  &kp G    &kp H      &ht LCTRL J  &ht LALT K  &ht LCMD L  &kp SEMI
+&kp Z  &kp X       &kp C       &kp V        &kp B    &kp N      &kp M        &kp COMMA   &kp DOT     &kp FSLH
+                               &mo 1        &td0     &kp RSHFT  &kp SPACE
             >;
         };
 
