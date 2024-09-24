@@ -4,6 +4,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
 
 / {
     behaviors {
@@ -25,28 +26,28 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp W       &kp E       &kp R        &kp T       &kp Y      &kp U        &kp I       &kp O       &kp P
-&kp A  &ht LCMD S  &ht LALT D  &ht LCTRL F  &kp G       &kp H      &ht LCTRL J  &ht LALT K  &ht LCMD L  &kp SEMI
-&kp Z  &kp X       &kp C       &kp V        &kp B       &kp N      &kp M        &kp COMMA   &kp DOT     &kp FSLH
+&kp Q  &kp W       &kp E       &kp R        &kp T       &kp Y      &kp U               &kp I       &kp O       &kp P
+&kp A  &ht LCMD S  &ht LALT D  &ht LCTRL F  &kp G       &kp H      &ht LCTRL J         &ht LALT K  &ht LCMD L  &kp SEMI
+&kp Z  &kp X       &kp C       &kp V        &kp B       &kp N      &kp M               &kp COMMA   &kp DOT     &kp FSLH
                                &mo 1        &kp RALT    &kp RSHFT  &ht RS(RALT) SPACE
             >;
         };
 
         layer_two {
             bindings = <
-&kp F1         &kp F2    &kp F3    &kp F4     &kp F5        &kp F6         &kp F7     &kp F8     &kp F9     &kp F10
-&kp PAGE_UP    &kp LEFT  &kp UP    &kp RIGHT  &kp TAB       &kp BACKSPACE  &sk LCTRL  &sk LALT   &sk LCMD   &kp F11
-&kp PAGE_DOWN  &kp HOME  &kp DOWN  &kp END    &kp ESCAPE    &kp DELETE     &kp INS    &kp PSCRN  &kp K_APP  &kp F12
+&none          &none     &none     &none      &none         &none          &none      &none     &none     &none
+&kp PAGE_UP    &kp LEFT  &kp UP    &kp RIGHT  &kp TAB       &kp BACKSPACE  &sk LCTRL  &sk LALT  &sk LCMD  &none
+&kp PAGE_DOWN  &kp HOME  &kp DOWN  &kp END    &kp ESCAPE    &kp DELETE     &none      &none     &none     &none
                                    &trans     &mo 2         &trans         &kp ENTER
             >;
         };
 
         tri_layer {
             bindings = <
-&kp F13      &kp F14       &kp F15       &kp F16       &kp F17       &kp F18  &kp F19  &kp F20  &kp F21  &kp F22
-&bootloader  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR    &trans   &trans   &trans   &trans   &kp F23
-&sys_reset   &none         &trans        &none         &none         &trans   &trans   &trans   &trans   &kp F24
-                                         &trans        &trans        &trans   &trans
+&kt F1       &kp F2  &kp F3  &kp F4           &kp F5    &kp F6     &kp F7        &kp F8        &kp F9      &kp F10
+&bootloader  &none   &none   &kp PRINTSCREEN  &none     &kp K_APP  &trans        &trans        &trans      &kp F11
+&sys_reset   &none   &none   &kp INS          &none     &none      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_CLR  &kp F12
+                             &trans           &trans    &trans     &none
             >;
         };
     };
