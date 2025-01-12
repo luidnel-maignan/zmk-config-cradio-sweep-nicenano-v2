@@ -36,9 +36,9 @@
         layer_one {
             bindings = <
 &kp ESCAPE     &kp BACKSPACE  &kp DELETE  &kp TAB    &none    &none   &none      &none     &none     &none
-&kp PAGE_UP    &kp LEFT       &kp UP      &kp RIGHT  &none    &none   &kp LCTRL  &kp LALT  &kp LCMD  &none
+&kp PAGE_UP    &kp LEFT       &kp UP      &kp RIGHT  &none    &none   &kp LCTRL  &kp LALT  &kp LCMD  &mo 2
 &kp PAGE_DOWN  &kp HOME       &kp DOWN    &kp END    &none    &none   &none      &none     &none     &none
-                                          &trans     &mo 2    &trans  &kp ENTER
+                                          &trans     &none    &trans  &kp ENTER
             >;
         };
 
