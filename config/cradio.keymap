@@ -35,19 +35,19 @@
 
         layer_one {
             bindings = <
-&kp ESCAPE     &kp BACKSPACE  &kp DELETE  &kp TAB    &none    &none   &none      &none     &none     &none
-&kp PAGE_UP    &kp LEFT       &kp UP      &kp RIGHT  &none    &none   &kp LCTRL  &kp LALT  &kp LCMD  &mo 2
-&kp PAGE_DOWN  &kp HOME       &kp DOWN    &kp END    &none    &none   &none      &none     &none     &none
-                                          &trans     &none    &trans  &kp ENTER
+&kp ESCAPE     &kp BACKSPACE  &kp DELETE  &kp TAB    &none         &kp LC(BACKSPACE)  &kp PRINTSCREEN  &kp INS   &kp K_APP  &none
+&kp PAGE_UP    &kp LEFT       &kp UP      &kp RIGHT  &kp TAB       &kp BACKSPACE      &kp LCTRL        &kp LALT  &kp LCMD   &mo 2
+&kp PAGE_DOWN  &kp HOME       &kp DOWN    &kp END    &kp ESCAPE    &kp DELETE         &none            &none     &none      &none
+                                          &trans     &none         &trans             &kp ENTER
             >;
         };
 
         layer_two {
             bindings = <
-&kp F1   &kp F2   &kp F3     &kp F4   &kp F5             &bt BT_CLR    &none   &none   &none   &none
-&kp F6   &kp F7   &kp F8     &kp F9   &kp F10            &bt BT_SEL 0  &trans  &trans  &trans  &none
-&kp F11  &kp F12  &kp K_APP  &kp INS  &kp PRINTSCREEN    &bt BT_SEL 1  &none   &none   &none   &none
-                             &trans   &trans             &trans        &none
+&kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &bt BT_CLR    &none   &none   &none   &none
+&kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &bt BT_SEL 0  &trans  &trans  &trans  &none
+&kp F11  &kp F12  &none   &none   &none      &bt BT_SEL 1  &none   &none   &none   &none
+                          &trans  &trans     &trans        &none
             >;
         };
     };
