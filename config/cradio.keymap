@@ -35,10 +35,10 @@
 
         layer_one {
             bindings = <
-&kp ESCAPE     &kp BACKSPACE  &kp DELETE  &kp TAB    &none         &kp LC(BACKSPACE)  &kp PRINTSCREEN  &kp INS   &kp K_APP  &none
-&kp PAGE_UP    &kp LEFT       &kp UP      &kp RIGHT  &kp TAB       &kp BACKSPACE      &kp LCTRL        &kp LALT  &kp LCMD   &mo 2
-&kp PAGE_DOWN  &kp HOME       &kp DOWN    &kp END    &kp ESCAPE    &kp DELETE         &none            &none     &none      &none
-                                          &trans     &none         &trans             &kp ENTER
+&kp ESCAPE     &kp BACKSPACE  &kp DELETE  &kp TAB    &none    &none   &kp PRINTSCREEN  &kp INS   &kp K_APP  &none
+&kp PAGE_UP    &kp LEFT       &kp UP      &kp RIGHT  &none    &none   &kp LCTRL        &kp LALT  &kp LCMD   &mo 2
+&kp PAGE_DOWN  &kp HOME       &kp DOWN    &kp END    &none    &none   &none            &none     &none      &none
+                                          &trans     &none    &trans  &kp ENTER
             >;
         };
 
